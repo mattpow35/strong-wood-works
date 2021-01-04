@@ -4,11 +4,11 @@
 
     <div class="add">
       <div class="form">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" v-model="fname" placeholder="First">
-        
+        <label for="fname">First name:</label><br>    <input type="text" id="fname" name="fname" v-model="fname">
+
+        <br>
         <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" v-model="lastName" placeholder="Last">
+        <input type="text" id="lname" name="lname" v-model="lastName">
         <br><br>
 
 
