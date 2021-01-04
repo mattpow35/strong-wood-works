@@ -1,21 +1,23 @@
 <template>
 <div class="admin">
-  <h1>Add a new Journal Entry!</h1>
+  <h1>Place an Order</h1>
 
     <div class="add">
       <div class="form">
-        <input v-model="name" placeholder="Name">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" v-model="fname" placeholder="First">
+        <br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" v-model="lastName" placeholder="Last">
+        <br><br>
         <textarea class="textarea" v-model="message" placeholder="Your entry"></textarea>
 
-        <input type="file" name="photo" @change="fileChanged">
-          <p>Choose a photo to upload!</p>
-        <button @click="upload">Upload</button>
+
+        <button @click="submit">Submit</button>
       </div>
       <div class="upload" v-if="addItem">
         <h1>Upload Successful!</h1>
-        <h2>Your Name: {{addItem.name}}</h2>
-        <p> Caption: {{addItem.message}}</p>
-        <img :src="addItem.path" />
+        
       </div>
     </div>
   </div>

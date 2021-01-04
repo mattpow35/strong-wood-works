@@ -1,10 +1,10 @@
 <template>
 <div>
-  <h1>Shared Journal</h1>
+  <h1>Home Page</h1>
   <div v-if="items.length === 0">
     <hr />
     <div class="problem">
-      <p>You currently have no journal entries.</p>
+      <p>Put pictures or content here.</p>
     </div>
   </div>
   <section class="image-gallery">
