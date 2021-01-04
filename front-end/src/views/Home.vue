@@ -1,5 +1,10 @@
 <template>
 <div>
+
+
+
+
+
   <h1>Home Page</h1>
   <div v-if="items.length === 0">
     <hr />

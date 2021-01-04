@@ -1,12 +1,27 @@
 <template>
 <div id="app">
-  <div class="header">
-    <h1>Strong Wood Works</h1>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/order">Place an Order</router-link>
-    </div>
-  </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<router-link class="navbar-brand" to="/" >Strong Wood Works</router-link>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <router-link class="nav-link" to="/">Home <span class="sr-only">(current)</span></router-link>
+    </li>
+    <li class="nav-item">
+    <router-link class="nav-link" to="/order">Place an Order</router-link>
+
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Pricing</a>
+    </li>
+
+  </ul>
+</div>
+</nav>
+
   <div class="content">
     <router-view />
   </div>
