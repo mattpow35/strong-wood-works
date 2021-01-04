@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Create from '../views/Create.vue'
+import Order from '../views/Order.vue'
 
 
 Vue.use(VueRouter)
@@ -16,6 +17,12 @@ const routes = [
     path: '/create',
     name: 'create',
     component: Create,
+  },
+  {
+    path: '/order',
+    name: 'order',
+    component: Order,
+
   },
 
 ]

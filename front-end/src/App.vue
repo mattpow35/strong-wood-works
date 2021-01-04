@@ -1,10 +1,10 @@
 <template>
 <div id="app">
   <div class="header">
-    <h1>Journal Sharing</h1>
+    <h1>Strong Wood Works</h1>
     <div id="nav">
-      <router-link to="/">Shared Journal</router-link> |
-      <router-link to="/create">New Journal Entry</router-link>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/order">Place an Order</router-link>
     </div>
   </div>
   <div class="content">
