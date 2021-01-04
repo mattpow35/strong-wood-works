@@ -6,18 +6,17 @@
       <div class="form">
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" v-model="fname" placeholder="First">
-        <br>
+        
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname" v-model="lastName" placeholder="Last">
         <br><br>
-        <textarea class="textarea" v-model="message" placeholder="Your entry"></textarea>
 
 
         <button @click="submit">Submit</button>
       </div>
       <div class="upload" v-if="addItem">
         <h1>Upload Successful!</h1>
-        
+
       </div>
     </div>
   </div>
