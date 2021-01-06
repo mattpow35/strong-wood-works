@@ -71,8 +71,8 @@
 
         <!-- Three columns of text below the carousel -->
         <div id="about" class="row">
-          <div style="align-self: center;" class="col-lg-4">
-            <img class="rounded-circle" src="../assets/profile-pic.png" alt="Generic placeholder image" width="180px" height="180px">
+          <div class="col-lg-4">
+            <img  class="rounded-circle center" src="../assets/profile-pic.png" alt="Generic placeholder image" width="180px" height="180px">
             <h2>About ME</h2>
             <p style="font-size: 15px">My name is Harrison Strong and I am the owner of Strong Wood Works......</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
@@ -293,6 +293,13 @@ padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 
