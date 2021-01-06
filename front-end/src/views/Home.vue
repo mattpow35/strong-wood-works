@@ -72,7 +72,7 @@
         <!-- Three columns of text below the carousel -->
         <div id="about" class="row">
           <div class="col-lg-4">
-            <img class="rounded-circle" src="../assets/profile-pic.png" alt="Generic placeholder image" width="200" height="200">
+            <img class="rounded-circle" src="../assets/profile-pic.png" alt="Generic placeholder image" width="180px" height="180px">
             <h2>About ME</h2>
             <p style="font-size: 15px">My name is Harrison Strong and I am the owner of Strong Wood Works......</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
