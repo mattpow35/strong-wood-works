@@ -1,7 +1,33 @@
 <template>
-<div class="admin">
-  <h1>Place an Order</h1>
+<div>
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a style="font-size: 30px;" class="navbar-brand" href="#">Strong Wood Works</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <router-link class="nav-link" to="/">Home <span class="sr-only">(current)</span></router-link>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+        <li class="nav-item active">
+          <router-link class="nav-link " to="/order">Get a Quote</router-link>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+<div id="orderForm">
+
+
   <form>
+  <h1>Place an Order</h1>
 
 	<div class="form-group"> <!-- Full Name -->
 		<label for="full_name_id" class="control-label">Full Name</label>
@@ -92,7 +118,7 @@
 		<select class="form-control" id="product_id">
 			<option value="patioBench">Wooden Bench</option>
       <option value="table">Dining Table</option>
-      <option value="board">Chacuterie Board</option>
+      <option value="board">Charcuterie Board</option>
 
 		</select>
 	</div>
@@ -108,6 +134,7 @@
 	</div>
 
 </form>
+</div>
 
 </div>
 
@@ -263,4 +290,24 @@ button {
 
 
 }
+
+.navbar {
+padding: 0 1rem;
+}
+
+.navbar-nav {
+font-size: 3rem;
+padding: 10px;
+}
+
+.nav-item {
+ padding-right: 30px;
+}
+
+#orderForm {
+  padding-top: 60px;
+  margin: 20px;
+  width: 50%;
+}
+
 </style>

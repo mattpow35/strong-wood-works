@@ -16,7 +16,7 @@
               <a class="nav-link" href="#">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">Get a Quote</a>
+              <router-link class="nav-link " to="/order">Get a Quote</router-link>
             </li>
           </ul>
 
