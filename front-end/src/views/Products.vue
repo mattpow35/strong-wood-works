@@ -31,7 +31,7 @@
           <li class="nav-item active">
             <router-link class="nav-link" to="/">Home</router-link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <router-link class="nav-link" to="/products">Products<span class="sr-only">(current)</span></router-link>
           </li>
           <li class="nav-item">
