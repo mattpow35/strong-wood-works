@@ -237,7 +237,7 @@ padding: 10px;
 }
 
 .container {
-  padding-top: 10px;
+  margin-top: 15px;
 }
 
 
