@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Create from '../views/Create.vue'
 import Order from '../views/Order.vue'
-import Products from '../views/Poducts.vue'
+import Products from '../views/Products.vue'
 
 
 Vue.use(VueRouter)
