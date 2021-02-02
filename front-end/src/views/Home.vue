@@ -13,7 +13,7 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
+              <router-link class="nav-link" to="/products">Products</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link " to="/order">Get a Quote</router-link>
