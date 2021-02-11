@@ -151,7 +151,7 @@ padding: 10px;
 }
 
 .container {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 
