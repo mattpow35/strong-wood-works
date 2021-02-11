@@ -149,9 +149,9 @@
         <input type="file" name="photo" @change="fileChanged">
         <button @click="upload">Upload</button>
       </div>
-      <div class="upload" v-if="addItem">
-        <h2>{{addItem.title}}</h2>
-        <img :src="addItem.path" />
+      <div class="upload" v-if="addProduct">
+        <h2>{{addProduct.title}}</h2>
+        <img :src="addProduct.path" />
       </div>
     </div>
 
@@ -172,11 +172,11 @@ export default {
   data() {
     return {
       name: "",
-      message: "",
+      description: "",
       date: "",
       file: null,
-      addItem: null,
-      items: [],
+      addProduct: null,
+      products: [],
       findTitle: "",
       findItem: null,
     }
@@ -195,14 +195,12 @@ export default {
         const formData = new FormData();
         formData.append('photo', this.file, this.file.name)
         let r1 = await axios.post('/api/photos', formData);
-        let r2 = await axios.post('/api/items', {
+        let r2 = await axios.post('/api/products', {
           name: this.name,
           path: r1.data.path,
-          message: this.message,
-          date: d.toDateString(),
-          likes: 0,
+          description: this.name,
         });
-        this.addItem = r2.data;
+        this.addProduct = r2.data;
       } catch (error) {
       console.log("error in async upload");
 
