@@ -106,7 +106,7 @@ export default {
   name: 'Products',
   data() {
     return {
-      Products: [],
+      products: [],
 
     }
   },
