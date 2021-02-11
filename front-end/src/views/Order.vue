@@ -139,6 +139,25 @@
 </div>
 
 
+<h1>The Admin Page!</h1>
+    <div class="heading">
+      <div class="circle">1</div>
+      <h2>Add an Item</h2>
+    </div>
+    <div class="add">
+      <div class="form">
+        <input v-model="title" placeholder="Title">
+        <p></p>
+        <input type="file" name="photo" @change="fileChanged">
+        <button @click="upload">Upload</button>
+      </div>
+      <div class="upload" v-if="addItem">
+        <h2>{{addItem.title}}</h2>
+        <img :src="addItem.path" />
+      </div>
+    </div>
+
+
 
 
 </template>
