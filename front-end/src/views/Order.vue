@@ -189,7 +189,6 @@ export default {
   },
   methods: {
     async upload() {
-    var d = new Date()
 
       try {
         const formData = new FormData();
