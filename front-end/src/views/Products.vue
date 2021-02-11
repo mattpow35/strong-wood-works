@@ -120,6 +120,7 @@ export default {
         this.products = response.data;
         return true;
       } catch (error) {
+        alert("Not getting products from api")
         alert(error);
       }
     },
