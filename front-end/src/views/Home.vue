@@ -149,51 +149,17 @@ export default {
   name: 'Home',
   data() {
     return {
-      items: [],
+      
 
     }
   },
   created() {
-    this.getItems();
+
   },
   methods: {
-    async getItems() {
-      try {
-        let response = await axios.get("/api/items");
-        this.items = response.data;
-        return true;
-      } catch (error) {
-        alert(error);
-      }
-    },
-    async deleteItem(item) {
-      var password = prompt("Please enter the password to delete", "");
-      if (password == "delete") {
-        try {
-          await axios.delete("/api/items/" + item._id);
-          //this.findItem = null;
-          this.getItems();
-          return true;
-        } catch (error) {
-          alert(error);
-        }
-      } else {
-        alert("Incorrect Password");
-      }
 
-    },
-    async addLike(item) {
-      try {
-        await axios.put("/api/items/" + item._id, {
-          likes: item.likes + 1,
 
-        });
-        this.getItems();
-        return true;
-      } catch (error) {
-        alert(error);
-      }
-    },
+
 
 
   },
