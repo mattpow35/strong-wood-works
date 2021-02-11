@@ -65,6 +65,7 @@ app.get('/api/products', async (req, res) => {
     res.send(products);
   } catch (error) {
     console.log(error);
+    console.log("failed api get request")
     res.sendStatus(500);
   }
 });
