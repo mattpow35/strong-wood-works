@@ -136,8 +136,6 @@
 </form>
 </div>
 
-</div>
-
 
 <h1>The Admin Page!</h1>
     <div class="heading">
@@ -156,6 +154,11 @@
         <img :src="addItem.path" />
       </div>
     </div>
+
+</div>
+
+
+
 
 
 
