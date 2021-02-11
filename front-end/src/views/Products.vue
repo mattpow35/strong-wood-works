@@ -69,10 +69,9 @@
                   <p class="card-text">{{product.name}}</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Get A Quote</button>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="text-muted"></small>
                   </div>
                 </div>
               </div>
