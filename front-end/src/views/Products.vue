@@ -60,7 +60,7 @@
       <div class="album py-5 bg-light">
         <div class="container">
 
-          <div class="row" v-for="product in products" v-bind:key="entry.id">
+          <div class="row" v-for="product in Products" v-bind:key="entry.id">
 
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
@@ -106,7 +106,7 @@ export default {
   name: 'Products',
   data() {
     return {
-      products: [],
+      Products: [],
 
     }
   },
