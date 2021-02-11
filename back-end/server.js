@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 
 const multer = require('multer');
 const upload = multer({
-  dest: '/var/www/journalsharing.mattpowley.com/images/',
+  dest: '../front-end/public/images',
    limits: {
      fileSize: 10000000
    }
@@ -19,21 +19,18 @@ app.use(bodyParser.urlencoded({
 const mongoose = require('mongoose');
 
 // connect to the database
-mongoose.connect('mongodb://localhost:27017/journal', {
+mongoose.connect('mongodb://localhost:27017/strong-wood-craft', {
   useNewUrlParser: true
 });
 
 
-const itemSchema = new mongoose.Schema({
+const productSchema = new mongoose.Schema({
   name: String,
   path: String,
-  message: String,
-  date: String,
-  likes: Number,
-  // path: String,
+  description: String,
 });
 
-const Item = mongoose.model('Item', itemSchema);
+const Product = mongoose.model('Product', productSchema);
 
 app.post('/api/photos', upload.single('photo'), async (req, res) => {
   // Just a safety check
@@ -45,29 +42,27 @@ app.post('/api/photos', upload.single('photo'), async (req, res) => {
   });
 });
 
-app.post('/api/items', async (req, res) => {
+app.post('/api/products', async (req, res) => {
 
-  const item = new Item({
+  const product = new Product({
     name: req.body.name,
     path: req.body.path,
-    message: req.body.message,
-    date: req.body.date,
-    likes: 0,
+    description: req.body.description,
   });
   try {
     console.log("trying to save new item");
-    await item.save();
-    res.send(item);
+    await product.save();
+    res.send(product);
   } catch (error) {
     console.log(error);
     res.sendStatus(500);
   }
 });
 
-app.get('/api/items', async (req, res) => {
+app.get('/api/products', async (req, res) => {
   try {
-    let items = await Item.find();
-    res.send(items);
+    let products = await Item.find();
+    res.send(products);
   } catch (error) {
     console.log(error);
     res.sendStatus(500);
