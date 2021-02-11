@@ -63,6 +63,7 @@ app.get('/api/products', async (req, res) => {
   try {
     let products = await Product.find();
     res.send(products);
+    console.log("loaded products from api")
   } catch (error) {
     console.log(error);
     console.log("failed api get request")
