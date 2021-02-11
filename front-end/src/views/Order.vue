@@ -144,13 +144,13 @@
     </div>
     <div class="add">
       <div class="form">
-        <input v-model="name" placeholder="Title">
+        <input v-model="name" placeholder="Name">
         <p></p>
         <input type="file" name="photo" @change="fileChanged">
         <button @click="upload">Upload</button>
       </div>
       <div class="upload" v-if="addProduct">
-        <h2>{{addProduct.title}}</h2>
+        <h2>{{addProduct.name}}</h2>
         <img :src="addProduct.path" />
       </div>
     </div>
